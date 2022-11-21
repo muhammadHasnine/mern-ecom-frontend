@@ -55,7 +55,7 @@ const App = () => {
   
       <Router>
         <Header />
-        {isAuthenticated && <UserOption user={user} />}
+        {/* {isAuthenticated && <UserOption user={user} />} */}
         <Routes>
 
           Genarel Routes 🛒🛒🛒🛒🛒🛒🛒🛒🛒
