@@ -24,9 +24,6 @@ const ProductReviews = () => {
         dispatch(getAllReviews(productId));
     }
     useEffect(()=>{
-      if(productId.length === 24){
-        dispatch(getAllReviews(productId))
-      }
       if(error){
         toast.error(error)
         dispatch(clearErrors());
@@ -39,7 +36,7 @@ const ProductReviews = () => {
         toast.success("Review Deleted Successfully")
         dispatch({type:DELETE_REVIEW_RESET})
       }
-    },[dispatch,error,deleteError,navigate,isDeleted,productId])
+    },[dispatch,error,deleteError,navigate,isDeleted])
     const columns =[
       {
         field:"id",

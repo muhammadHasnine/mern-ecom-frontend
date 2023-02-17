@@ -50,13 +50,13 @@ const App = () => {
     });
     store.dispatch(loadUser());
   }, []);
-  window.addEventListener("contextmenu",(e)=>e.preventDefault())
+  // window.addEventListener("contextmenu",(e)=>e.preventDefault())
   return (
   
       <Router>
         <Header />
 
-        {/* {isAuthenticated && <UserOption user={user} />} */}
+        {isAuthenticated && <UserOption user={user} />}
 
 
         <Routes>

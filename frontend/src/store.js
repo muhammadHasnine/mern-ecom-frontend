@@ -39,3 +39,6 @@ let initalState = {
 const store = createStore(reducer, initalState, composeWithDevTools(applyMiddleware(...middleware)));
 
 export default store
+
+export const server = "https://mern-ecom-backend.vercel.app"
+// export const server = "http://localhost:4000"

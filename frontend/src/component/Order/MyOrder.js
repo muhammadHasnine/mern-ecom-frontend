@@ -26,7 +26,7 @@ const MyOrder = () => {
       ) : (
         <Fragment>
            <MetaData title={`${user.name}--Orders`}/>
-          {orders.length === 0 ? <div className="flex flex-col justify-center items-center w-[100vw] h-[100vh] max-w-full "><CancelIcon className="text-[tomato] !text-[10vmax]"/><p className="my-[2vmax]">Order is empty go to Cart</p> <Link to='/cart' className="bg-[#333333] text-white p-[12px_34px]">View Cart</Link> </div> : (<div className="h-[100vh] w-[100vw] max-w-full bg-[rgb(235_235_235)] fixed top-0 left-0">
+          {orders && orders.length === 0 ? <div className="flex flex-col justify-center items-center w-[100vw] h-[100vh] max-w-full "><CancelIcon className="text-[tomato] !text-[10vmax]"/><p className="my-[2vmax]">Order is empty go to Cart</p> <Link to='/cart' className="bg-[#333333] text-white p-[12px_34px]">View Cart</Link> </div> : (<div className="h-[100vh] w-[100vw] max-w-full bg-[rgb(235_235_235)] fixed top-0 left-0">
             <div className="Order_container overflow-x-auto">
               <div className="orderBox w-[1024px] m-auto">
                 <header className="flex bg-[tomato] text-white py-3 px-7 font-medium">
