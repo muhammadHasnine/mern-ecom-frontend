@@ -7,12 +7,9 @@ import { useParams } from "react-router-dom";
 import Pagination from "react-js-pagination";
 import MetaData from "./layout/MetaData";
 const category = [
-  "Processore",
-  "Component",
-  "Desktop",
-  "Monitor",
-  "Graphics Card",
-  "T-shirt",
+  "Furniture",
+  "Electronics",
+  "Clothes"
 ];
 const Products = () => {
   const { keyword } = useParams();

@@ -36,9 +36,11 @@ import UpdateUser from "./component/Admin/UpdateUser";
 import ProductReviews from "./component/Admin/ProductReviews";
 import Contact from './component/contact/Contact';
 import About from './component/about/About';
-import NotFound from './component/NotFound'
+import NotFound from './component/NotFound';
+import Test from './component/Test';
 import { ToastContainer } from "react-toastify";
 import "react-toastify/ReactToastify.min.css";
+import Hero from "./component/layout/Hero";
 const App = () => {
   const { isAuthenticated, user } = useSelector((state) => state.user);
 
@@ -54,9 +56,9 @@ const App = () => {
   return (
   
       <Router>
-        <Header />
-
-        {isAuthenticated && <UserOption user={user} />}
+        {/* <Header /> */}
+        <Test user={user}/>
+        {/* {isAuthenticated && <UserOption user={user} />} */}
 
 
         <Routes>
@@ -68,7 +70,7 @@ const App = () => {
           <Route path="/search" element={<Search />} />
           <Route path="/products/:keyword" element={<Products />} />
           <Route path="/login" element={<LoginSingup />} />
-            
+          <Route path="/test" element={<Hero />} />
             Protected Routes for Admin and User 👇👇👇👇
           <Route
             element={
@@ -87,6 +89,7 @@ const App = () => {
             <Route path="/success" element={<OrderSuccess />} />
             <Route path="/orders" element={<MyOrder />} />
             <Route path="/order/:id" element={<OrderDetails />} />
+           
           </Route>
 
           Protected Routes for Admin only 🛃🛃🛃🛃🛃🛃

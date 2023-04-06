@@ -25,12 +25,9 @@ const NewProduct = () => {
   const [images, setImages] = useState([]);
   const [imagesPreview, setImagesPreview] = useState([]);
   const categories = [
-    "Processore",
-    "Component",
-    "Desktop",
-    "Monitor",
-    "Graphics Card",
-    "T-shirt",
+    "Furniture",
+    "Electronics",
+    "Clothes"
   ];
 
   useEffect(() => {

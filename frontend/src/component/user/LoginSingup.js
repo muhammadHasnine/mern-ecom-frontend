@@ -124,7 +124,9 @@ const LoginSingup = () => {
                 />
               </div>
               <Link to="/password/forgot">Forget Password ?</Link>
+              
               <input type="submit" value="Login" className="loginBtn" />
+              <p>Back to <Link to='/'>Home</Link></p>
             </form>
             <form
               className="signUpForm"
@@ -173,6 +175,7 @@ const LoginSingup = () => {
       </Fragment>
       )
     }
+    
    </Fragment>
   );
 };

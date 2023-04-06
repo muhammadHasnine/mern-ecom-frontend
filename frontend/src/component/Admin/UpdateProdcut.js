@@ -28,12 +28,9 @@ const UpdateProduct = () => {
   const [imagesPreview, setImagesPreview] = useState([]);
   const [oldImages, setOldImages] = useState([]);
   const categories = [
-    "Processore",
-    "Component",
-    "Desktop",
-    "Monitor",
-    "Graphics Card",
-    "T-shirt",
+    "Furniture",
+    "Electronics",
+    "Clothes"
   ];
 
   useEffect(() => {
